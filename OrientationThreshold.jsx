@@ -1,0 +1,146 @@
+import React from "react";
+
+export default function OrientationThreshold() {
+  const styles = {
+    page: {
+      fontFamily:
+        "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      background: "#f6f2ea",
+      color: "#2f3a34",
+      minHeight: "100vh",
+      padding: "48px 20px",
+    },
+    container: {
+      maxWidth: "720px",
+      margin: "0 auto",
+      lineHeight: 1.6,
+      background: "#f1ece3",
+      border: "1px solid #e5ddd0",
+      borderRadius: "8px",
+      padding: "32px 28px",
+    },
+    title: {
+      fontSize: "26px",
+      fontWeight: 500,
+      letterSpacing: "0.2px",
+      margin: "0 0 16px 0",
+    },
+    sectionTitle: {
+      fontSize: "20px",
+      fontWeight: 500,
+      margin: "28px 0 8px 0",
+    },
+    lead: {
+      fontSize: "18px",
+      fontWeight: 500,
+      margin: "0 0 24px 0",
+    },
+    section: {
+      margin: "24px 0",
+    },
+    invitation: {
+      background: "#f1ece3",
+      border: "1px solid #e5ddd0",
+      padding: "12px 16px",
+      borderRadius: "8px",
+    },
+    list: {
+      margin: "12px 0 0 18px",
+      padding: 0,
+    },
+    footer: {
+      marginTop: "32px",
+      paddingTop: "16px",
+      borderTop: "1px solid #e5ddd0",
+      fontWeight: 500,
+      color: "#4a5a52",
+    },
+    secondaryText: {
+      color: "#4a5a52",
+    },
+  };
+
+  return (
+    <main style={styles.page}>
+      <div style={styles.container}>
+        <h1 style={styles.title}>Orientation</h1>
+        <p style={styles.lead}>This is not a quiz.</p>
+        <p>Nothing here will score you, rank you, or tell you what to fix.</p>
+
+        <section style={styles.section}>
+          <p>Most health systems start by asking for effort.</p>
+          <p>They assume capacity is already there.</p>
+          <p>Core Four starts somewhere else.</p>
+          <p>
+            We assume that change doesn’t fail because people don’t care. It
+            fails when too much is asked of a system that’s already carrying a
+            lot.
+          </p>
+          <p>Here, pressure is not a tool.</p>
+          <p>Urgency is not a strategy.</p>
+          <p>Performance is not the goal.</p>
+        </section>
+
+        <section style={styles.section} aria-label="A Different Starting Point">
+          <h2 style={styles.sectionTitle}>A Different Starting Point</h2>
+          <p>Before plans, habits, or goals, there’s something more basic.</p>
+          <p>Learning how to be with yourself again.</p>
+          <p>Not to improve.</p>
+          <p>Not to optimize.</p>
+          <p>Just to notice what’s actually here.</p>
+          <p>
+            Presence is the only practice that never violates capacity. That’s
+            why it comes first.
+          </p>
+        </section>
+
+        <section style={styles.section} aria-label="A Small Pause (Optional)">
+          <h2 style={styles.sectionTitle}>A Small Pause (Optional)</h2>
+          <div style={styles.invitation}>
+            <p>If it feels okay, you might pause for a moment.</p>
+            <p>Notice what it’s like to be here right now—reading this.</p>
+            <p>Nothing needs to change.</p>
+            <p>There’s no right way to do this.</p>
+            <p>You can skip this entirely.</p>
+          </div>
+        </section>
+
+        <section style={styles.section} aria-label="How This Works">
+          <h2 style={styles.sectionTitle}>How This Works</h2>
+          <p>This space doesn’t lead anywhere unless you choose to go further.</p>
+          <p>You won’t miss anything by stopping here.</p>
+          <p>You’re allowed to:</p>
+          <ul style={styles.list}>
+            <li>read and leave</li>
+            <li>pause and close</li>
+            <li>do nothing at all</li>
+          </ul>
+          <p>Nothing needs to happen for this to count.</p>
+        </section>
+
+        <section
+          style={styles.section}
+          aria-label="If You Want to Stay Connected (Optional)"
+        >
+          <h2 style={styles.sectionTitle}>
+            If You Want to Stay Connected (Optional)
+          </h2>
+          <p>
+            If you’d like to receive occasional writing or reflections from Core
+            Four, you can leave your email.
+          </p>
+          <p>This won’t unlock anything.</p>
+          <p>It doesn’t sign you up for a program.</p>
+          <p>You’ll still have full access to everything without it.</p>
+          <p>You’re free to ignore this and move on.</p>
+        </section>
+
+        <section style={styles.section} aria-label="Closing Line">
+          <p style={styles.footer}>
+            Nothing needs to come next. Pausing is a valid outcome.
+          </p>
+        </section>
+      </div>
+    </main>
+  );
+}
